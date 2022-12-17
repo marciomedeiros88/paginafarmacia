@@ -22,10 +22,9 @@ header{
     padding: 2em;
     align-items: center;
     display: flex;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around;    
 }
+
 header img{
     width: 15em;
 }
@@ -44,19 +43,19 @@ main{
     display: grid;
     grid-auto-flow: column;
     width: auto;
-    
+    justify-content: space-around;
 }
 
 #cadastro{
     font-family: 'Poppins';
     font-weight: 200;
-    width: 40em;
+    
     padding: 1em;
 }
 
 #tabela{
     padding: 1em;
-    width: 40em;
+    
 }
 
 #tabelaMedicamentos{
@@ -69,6 +68,7 @@ form{
     display: grid;
     grid-auto-flow: row;
     padding: 0;
+    width: 40em;
 }
 
 input{
