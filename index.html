@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de medicamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <p>Home</p>
+        <p>Cadastro de medicamentos</p>
+        <p>Cadastro de vacinas</p>
+        <p>Cadastro de cosméticos</p>
+    </nav>
+    <header>
+        <img src="img/logo-farmacia.png">
+        <h1>Cadastro de Medicamentos</h1>
+    </header>
+    <main>
+        <div id="cadastro">
+            <form onsubmit="adicionarMedicamento()">
+                <label>Nome do medicamento</label>
+                <input type="text" placeholder="Nome do Medicamento" autocomplete="off" required id="nomeMedicamento">
+                <label>Quantidade disponível</label>
+                <input type="number" placeholder="Quantidade do Medicamento" autocomplete="off" required id="quantidadeMedicamento">
+                <label>Classe do medicamento</label>
+                <input type="text" placeholder="Classe do Medicamento" autocomplete="off" required id="classeMedicamento">
+                <button type="input">Adicionar medicamento</button>
+            </form>
+        </div>
+        <div id="tabela">
+            <table id="tabelaMedicamentos">
+                <tr>
+                <th>ID</th>
+                <th>Medicamento</th>
+                <th>Quantidade</th>
+                <th>Classe</th>
+                <th>Remover</th>
+                </tr>
+                <td></td>
+            </table>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
